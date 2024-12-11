@@ -7,6 +7,10 @@ function string() {
     // document.write(abc.concat(def)) // add two string values together
     // document.write(def.toUpperCase(0,9)) // it will convert the text in capitals letter
     // document.write(def.toLowerCase(0,9)) // it will convert the text in smaller letter
+    // document.write(abc.indexOf("r")) // it will give the index value of string
+    
+
+    
     
 }
 string()

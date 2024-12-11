@@ -75,48 +75,48 @@ function task() {
 // --------------------------------------------------------------------------------------------------------------------
 //question-8
 
-// let i=prompt("enter your numbers to display")
-//   for (let i = 1; i <= 10; i++) {
-//     console.log(i)
+let i=prompt("enter your numbers to display")
+  for ( i = 1; i <= 10; i++) {
+    console.log(i)
     
-//   }
-  // ---------------------------------------------------------------------------------------------------------------
-  // question-9
-  let num;
-
-  do{
-    num=prompt("enter your number")
   }
-  while(num<10)
-    alert("welcome user ")
-  // -------------------------------------------------------------------------------------------------------------------
-  // question-10
- let day= parseInt(prompt("enter the day of the week")) ;
- switch (day) {
-    case 1:
-    alert("today is monday")
-    break;
-    case 2:
-    alert("today is tuesday")
-    break;
-    case 3:
-    alert("today is wednesday")
-    break;
-    case 4:
-    alert("today is thrusday")
-    break;
-    case 5:
-    alert("today is friday")
-    break;
-    case 6:
-    alert("today is saturday")
-    break;
-    case 7:
-    alert("today is sunday")
-    break;
-    default:
-    alert("enter valid day")
-    break;
- }
+  // ---------------------------------------------------------------------------------------------------------------
+//   // question-9
+//   let num;
+
+//   do{
+//     num=prompt("enter your number")
+//   }
+//   while(num<10)
+//     alert("welcome user ")
+//   // -------------------------------------------------------------------------------------------------------------------
+//   // question-10
+//  let day= parseInt(prompt("enter the day of the week")) ;
+//  switch (day) {
+//     case 1:
+//     alert("today is monday")
+//     break;
+//     case 2:
+//     alert("today is tuesday")
+//     break;
+//     case 3:
+//     alert("today is wednesday")
+//     break;
+//     case 4:
+//     alert("today is thrusday")
+//     break;
+//     case 5:
+//     alert("today is friday")
+//     break;
+//     case 6:
+//     alert("today is saturday")
+//     break;
+//     case 7:
+//     alert("today is sunday")
+//     break;
+//     default:
+//     alert("enter valid day")
+//     break;
+//  }
 }
 task();
