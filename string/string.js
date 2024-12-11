@@ -1,16 +1,79 @@
-function string() {
+// function sid(){
 
-    let abc="hello world";
-    let def="i am amar"
-    // document.write(abc.length) //length of the string
-    // document.write(abc.slice(2,8)) // slice the length with given start indexing no and ending indexing number
-    // document.write(abc.concat(def)) // add two string values together
-    // document.write(def.toUpperCase(0,9)) // it will convert the text in capitals letter
-    // document.write(def.toLowerCase(0,9)) // it will convert the text in smaller letter
-    // document.write(abc.indexOf("r")) // it will give the index value of string
+//     let text="    This";
+//     // let text2="i am fromCybromOfficial"
+
+//     //  document.write(text.length)  // retruns length
+
+//     //   document.write(text.slice(2,10)) // returns tukda
+     
+//     //document.write(text2.slice(9,15))  
+
+//    //document.write(text.concat(text2)) // Combine 2 string in one
     
+// console.log(text.trim());
 
     
+//         // document.write(text.trim())
+
     
+     
+
+// }
+
+// sid()
+
+
+function okk(){
+
+    //=============== replace=========
+
+ //   let text= "the Java mern Java and javascript is fun";
+
+    // let ans=text.replace(/java/ig,"hello")
+    // document.write(ans)
+
+    // g= means global changes all exact matches
+    // i= case-insensitive 
+    //gi= changes all capital ans small into Hello
+
+
+    // ================== Split ====
+
+    // let text= "the Java mern + Java and  javascript is fun";
+
+    // let ans=text.split("+")
+    // console.log(ans)
+
+
+   // ============= Template laterals ( ` ` )
+
+    //   let text=`this is jffj fjnvfnv kfvkvk 
+    //   strting jfnggjf
+    //              fkgfkmgmf
+    //              okokfvdkvdf 100 sdjvsvs`
+
+
+
+    // let text=This is "Cybrom" and 'sid' is faculty here          
+    //    alert(text)
+    //    //supports single quotes('') and double ("")
+
+   
+    
+  
+ 
 }
-string()
+
+// okk();
+
+
+
+function sid(){
+
+    let ans1= parseInt(prompt("Enter no 1"))
+    let ans2=parseInt(prompt("Enter no 2"))
+
+    alert(` The sum of ${ans1} and ${ans2} is ${ans1+ans2}  ` )
+
+}
