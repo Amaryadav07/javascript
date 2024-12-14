@@ -86,22 +86,51 @@ function arr(){
 //   console.log(i)                      // always return string value
 // }
 
+// let arr=[1,2,3,4,5,6,7,8,9,10]
+// console.log( "A ",arr);
+// let arr1=arr.slice(2,5)
+// console.log(arr1)
+// console.log("B ",arr)
+// let arr2=arr.splice(1,4)
+
+// console.log(arr2)
+// console.log(arr)
+
 let arr=[1,2,3,4,5,6,7,8,9,10]
-console.log( "A ",arr);
-let arr1=arr.slice(2,5)
-console.log(arr1)
-console.log("B ",arr)
-let arr2=arr.splice(1,6)
-console.log(arr2)
-console.log("C ",arr)
-
-function binary(num){
-  return num.toString(2) // this will convert in binary 
+function binary(double){
+  return double*2
+//   return double.toString(2) // this will convert in binary 
 }
-
-
  let myarr=arr.map(binary)
    
 console.log(myarr)
+
+// ------------------method 2 high order functions-----------
+// let arr=[2,4,8,6]
+// let myarr=arr.map(function multi(double){
+//  return double*2
+
+// })
+// console.log(myarr)
+// -----------------------------reduce----------------------------
+// ----------------sum of array----------------------------
+// let arr=[1,2,3,4,5,6]
+// let ans=arr.reduce(function (acc,curr){
+//    acc=acc+curr;
+//    return acc
+
+// })
+// console.log(ans)
+// -----------------max value---------------------------
+// let arr=[1,2,3,4,5,6]
+// let ans=arr.reduce(function (max,curr){
+//   if(curr>max){
+//     max=curr
+//   }
+//   return max
+// },0)
+// console.log(ans)
+
+
   }
 arr();
