@@ -14,7 +14,7 @@ let increment=()=> {
      
     }
     else{
-      alert("Try again")
+      alert("Try again later")
     }
   }
   else if (countValue>0) {
