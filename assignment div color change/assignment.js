@@ -7,6 +7,7 @@ ans.style.backgroundColor="red";
 
 }
 
+
 let btn2=()=>{
   let ans=document.querySelector("#box")
   ans.style.backgroundColor="orange";
