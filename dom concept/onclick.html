@@ -21,10 +21,18 @@
 <body>
     <div id="displayDiv"></div>
     <div>
-        <img src="/dom concept/image1.jpg" alt="Image 1" class="images" onclick="changeImage('image1.jpg')">
-        <img src="/dom concept/image2.jpg" alt="Image 2" class="images" onclick="changeImage('image2.jpg')">
-        <img src="/dom concept/image3.jpg" alt="Image 3" class="images" onclick="changeImage('image3.jpg')">
-      </div>
+        <img src="/dom concept/image1.jpg" alt="Image 1" class="images" onmouseenter="changeImage('image1.jpg')" onmouseleave="down()">
+        <img src="/dom concept/image2.jpg" alt="Image 2" class="images" onclick="changeImage('image2.jpg')" onmouseleave="down()">
+        <img src="/dom concept/image3.jpg" alt="Image 3" class="images" onclick="changeImage('image3.jpg')" onmouseleave="down()">
+      </div> 
+
+
+<!-- ONMOUSEENTER -->
+<!-- <div id="displayDiv"></div>
+<button onmouseenter="red()" onmouseleave="redleave()">red</button>
+<button onmouseenter="blue()" onmouseleave="blueleave()">blue</button>
+<button onmouseenter="yellow()" onmouseleave="yellowleave()">yellow</button> -->
+
     <script src="/dom concept/onclick.js"></script>
     
 </body>

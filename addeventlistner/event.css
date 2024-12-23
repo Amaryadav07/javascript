@@ -1,0 +1,43 @@
+#btn{
+padding: 18px;
+border: 2px solid white;
+color: white;
+background-image: linear-gradient(to right, red , yellow);
+font-weight: bold;
+text-transform: capitalize;
+border-radius: 20px;
+margin-left: 30px;
+margin-top: 70px;
+
+}
+#btn:hover{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    color: black;
+}
+#imp{
+    
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+#imp:focus {
+    outline: none;
+    border-color: rgba(38, 191, 71, 1);
+    box-shadow: 0 0 10px rgba(38, 191, 71, 1);
+}
+#text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(223, 6, 6);
+    animation: bounce 2s infinite ease-in-out; 
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-30px); 
+    }
+}

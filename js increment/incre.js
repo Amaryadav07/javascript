@@ -5,6 +5,7 @@ let ans = document.getElementById('counter');
 
 let increment=()=> {
   
+  
   if (countValue==0) {
     
     let input=confirm("Do you want an increment in number")
