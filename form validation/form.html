@@ -3,28 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form validation/form.css">
     <title>form</title>
 
 </head>
 <body>
-    <form action="">
-        <p id="errorname"></p>
-        Enter Your Name:-<input type="text" id="name"><br><br>
+         <div class="bird-container bird-container--one">
+		        <div class="bird bird--one"></div>
+	       </div>
+          <div class="bird-container bird-container--two">
+		       <div class="bird bird--two"></div>
+	        </div>
+        <div class="bird-container bird-container--three">
+		    <div class="bird bird--three"></div>
+	     </div>
+        <div class="bird-container bird-container--four">
+		   <div class="bird bird--four"></div>
+	     </div>
 
-        <p id="errormobile"></p>
-        Enter Your Mobile No.:-<input type="text" id="mobile"><br><br>
-
-        <p id="erroremail"></p>
-        Enter  Your Email:-<input type="text" id="email"><br><br>
-
-        <p id="errorpassword"></p>
-        Enter Password:-<input type="text" id="password"><br><br>
-
-        <p id="errorconfirm"></p>
-        Enter Confirm Password:-<input type="text" id="confirm"><br><br>
-
-        <input type="submit" value="login" onclick="return submitt()">
-    </form>
+       
+     <form action="">
+      <h1>  Form Validation </h1>
+     
+        Enter Your Name:-<input type="text" id="name"><br>
+       
+        Enter Your Mobile No:-<input type="text" id="mobile"><br>
+       
+        Enter  Your Email:-<input type="text" id="email"><br>
+       
+        Enter Password:-<input type="password" id="password"><br>
+     
+        Enter Confirm Password:-<input type="password" id="confirm"><br>
+       
+       <input type="submit" value="login"  id="button">
+      </form>
     <script src="/form validation/form.js"></script>
+
+    <!-- let submitt=()=>{
+
+      let name=document.querySelector("#name").value;
+      let num=document.querySelector("#num").value;
+      let email=document.querySelector("#email").value;
+      let pass=document.querySelector("#pass").value;
+      let cpass=document.querySelector("#cpass").value;
+ 
+ 
+      let errname=document.querySelector("#errname")
+      let errnum=document.querySelector("#errnum")
+      let erremail=document.querySelector("#erremail")
+      let errpass=document.querySelector("#errpass")
+      let errcpass=document.querySelector("#errcpass")
+ 
+       if(name===""){
+         errname.innerHTML="Please enter you name";
+         errname.style.color="red";
+         return false;
+ 
+       }
+ 
+       else if(isNaN(num)){
+         errnum.innerHTML="Please enter a valid number";
+         return false;
+       }
+ 
+       else if(num.length!=10){
+         errnum.innerHTML="Please enter a 10 digit number";
+         return false;
+       }
+ 
+       else if(!(email.includes('@') && email.includes('.com'))){
+         erremail.innerHTML="Please enter a valid email";
+         return false;
+       }
+ 
+ 
+       else if(pass!=cpass){
+         errcpass.innerHTML="Password and confirm password should be same";
+         return false;
+       }
+ 
+ 
+       else if(!(
+         pass.match(/[1234567890]/) &&
+         pass.match(/[!@#$%^&*()]/) &&
+         pass.match(/[a-z]/) &&
+         pass.match(/[A-Z]/)
+       ))
+       {
+         errpass.innerHTML="Password should have at least one uppercase letter, one lowercase letter, one digit"
+          return false
+       }
+ 
+       //focus() .. placeholder ///value empty
+ 
+ } -->
+   
 </body>
 </html>
