@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculator/cal.css">
+    <title>Document</title>
+</head>
+<body>
+    <table cellspacing="20px" cellpadding="20px" >
+   <tr>
+    <td id="display" colspan="4"></td>
+   </tr>
+   <tr>
+    <td onclick="pressed('1')"  id="same">1</td>
+    <td onclick="pressed('2')" id="same">2</td>
+    <td onclick="pressed('3')" id="same">3</td>
+    <td onclick="pressed('4')" id="same">4</td>
+   </tr>
+
+   <tr>
+    <td onclick="pressed('5')" id="same">5</td>
+    <td onclick="pressed('6')" id="same">6</td>
+    <td onclick="pressed('7')" id="same">7</td>
+    <td onclick="pressed('8')" id="same">8</td>
+    </tr>
+    <tr>
+        
+    <td onclick="pressed('9')" id="same">9</td>
+    <td onclick="pressed('0')" id="same">0</td>
+    <td onclick="pressed('00')" id="same">00</td>
+    <td onclick="pressed('.')">.</td>
+   
+   </tr>
+   <tr>
+    <td onclick="pressed('-')">-</td>
+    <td onclick="pressed('*')">*</td>
+    <td onclick="pressed('%')">%</td>
+    <td onclick="pressed('+')">+</td>
+   </tr>
+
+   <tr>
+    <td onclick="del()" id="dell">Del</td>
+    <td onclick="clearr()" id="clears">Ac</td>
+    <td onclick="pressed('/')">/</td>
+    <td onclick="equall('=')">=</td>
+    
+   </tr>
+   <tr><td onclick="squ()" id="same">squ</td></tr>
+   <tr>
+  
+    <td colspan="4" id="footer">Designed by: Amar Nath </td>
+</tr>
+
+ </table>
+    <script src="./cal.js"></script>
+</body>
+</html>
