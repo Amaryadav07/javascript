@@ -1,7 +1,23 @@
-let start=()=>{
-    setTimeout(()=>{
-        console.log("Running");
-    },3000);
+
+   let input;
+   let start=()=>{
+    let count=10;
+     input=setInterval(()=>{
+        console.log(count);
+        count--;
+        if (count===-1) {
+
+          clearInterval(input)  
+        }
+       
+    },1000);
+   
+}
+
+let stop=()=>{
+
+clearInterval(input)
+
 }
 
 
