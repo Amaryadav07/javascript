@@ -18,14 +18,36 @@
 // console.log(ans7);
 
 
-let here=()=>{
-let time=new Date();
-let ans =document.querySelector("#abc")
-ans.innerHTML= time.toLocaleString();
+// let here=()=>{
+// let time=new Date();
+// let ans =document.querySelector("#abc")
+// ans.innerHTML= time.toLocaleString();
 
-let arr=["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"]
+// let arr=["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"]
 
-ans.innerHTML=arr[time.getDay()]
+// ans.innerHTML=arr[time.getDay()]
 
 
-}
+// }
+setInterval(()=>{
+    let show=document.querySelector("#display");
+    let time=new Date();
+    show.innerHTML=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
+},1000)
+
+
+// let alarm=()=>{
+//     setInterval(()=>{
+//     let show=document.querySelector("#display")
+//     let inp=document.querySelector("#input").value
+//     let  time=new Date()
+//     let alarmtime=`${time.getHours().toString().padStart(2,"0")}:${time.getMinutes().toString().padStart(2,"0")}`
+//     if (alarmtime==inp) {
+//         show.innerHTML="Alarm is ringing"
+//     }
+//     else{
+//         show.innerHTML="alarm set"
+//     }
+
+// },1000)
+// }
