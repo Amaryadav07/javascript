@@ -73,15 +73,15 @@ function task2() {
 // Use the filter() method to find all the even numbers.
 // Display the even numbers in an alert.
 
-// let user=prompt("enter your 1st number .")
-// let user1=prompt("enter your 2nd number .")
-// let user2=prompt("enter your 3rd number .")
-// let user3=prompt("enter your 4th number .")
-// let user4=prompt("enter your 5th number .")
+let user=prompt("enter your 1st number .")
+let user1=prompt("enter your 2nd number .")
+let user2=prompt("enter your 3rd number .")
+let user3=prompt("enter your 4th number .")
+let user4=prompt("enter your 5th number .")
 
-// let arr=[user,user1,user2,user3,user4]
-// let ans=arr.filter( (num)=>(num%2==0) )
-// alert(ans)
+let arr=[user,user1,user2,user3,user4]
+let ans=arr.filter( (num)=>(num%2==0) )
+alert(ans)
 
 
 // Question 9: Replace and Uppercase -------------------------------------------------------------------------------
@@ -101,12 +101,12 @@ function task2() {
 // Display the result in the console or with alert (e.g., "5 x 1 = 5"). 
 
 
-let user=parseInt( prompt("Enter your number")) 
-let ans='';
-for (let i = 1; i <= 10; i++) {
-    ans =ans + `${user} * ${i} = ${user * i}\n`; 
+// let user=parseInt( prompt("Enter your number")) 
+// let ans='';
+// for (let i = 1; i <= 10; i++) {
+//     ans =ans + `${user} * ${i} = ${user * i}\n`; 
   
-}
-alert(ans)
+// }
+// alert(ans)
 }
 task2()

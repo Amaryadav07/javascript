@@ -34,7 +34,7 @@
     display:flex ;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     opacity: 0;
 
 }
@@ -59,6 +59,7 @@
     display:flex ;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     opacity: 0;
 
 }
@@ -84,6 +85,8 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
 
 }
 
@@ -93,31 +96,62 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color:blue;
+    margin-left: 40px;
 }
 
-#box5{
+#box5 {
     width: 300px;
     height: 300px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color:blanchedalmond ;
+    background-color: blanchedalmond;
     position: absolute;
     top: 20%;
     left: 30%;
-    display:flex ;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create 3 equal-width columns */
+    grid-template-rows: 1fr 1fr 1fr; /* Create 3 equal-height rows */
+    gap: 10px;
+    justify-items: center; 
     align-items: center;
     opacity: 0;
-
 }
 
-#box5 div{
+
+#box5 div {
     width: 50px;
     height: 50px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color:blue;
+    background-color: blue;
 }
+
+
+#box5 div:nth-child(1) {
+    grid-column: 1; /* Top-left corner */
+    grid-row: 1;
+}
+
+#box5 div:nth-child(2) {
+    grid-column: 3; /* Top-right corner */
+    grid-row: 1;
+}
+
+#box5 div:nth-child(3) {
+    grid-column: 1; /* Bottom-left corner */
+    grid-row: 3;
+}
+
+#box5 div:nth-child(4) {
+    grid-column: 3; /* Bottom-right corner */
+    grid-row: 3;
+}
+
+#box5 div:nth-child(5) {
+    grid-column: 2; /* Center */
+    grid-row: 2;
+}
+
 
 #box6{
     width: 300px;
@@ -132,6 +166,11 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+ 
 
 }
 
@@ -141,4 +180,5 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color:blue;
+    margin-left: 20px;
 }
